@@ -41,7 +41,7 @@ $grade_items = json_decode($json_raw);
 
 //update grade_items in database;
 // need to create update_grade_items function
-$DATABASE->update_grade_items($grade_items);
+$DATABASE->update_grade_items($grade_items,$courseid);
 
 
 ?>
