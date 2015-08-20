@@ -23,7 +23,7 @@ foreach($sections as $key => $section){
     } else{
         $insert = "INSERT INTO classes
                         VALUES ({$section['sectionname'},
-                                {$section['lms_code'],
+                                {$section['lms_code']},
                                 any_other_values,...);";
         $DATABASE->query($insert);
     }
